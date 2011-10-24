@@ -22,6 +22,10 @@
       <url>http://nexus.xebia-tech-event.info:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>-->
+  <scm>
+      <connection>scm:git:git://github.com/mathieubigorne/continuous-deployement-mvn-release</connection>
+      <developerConnection>scm:git:https://mathieubigorne@github.com/mathieubigorne/continuous-deployement-mvn-release.git</developerConnection>
+    </scm>
   <distributionManagement>
       <repository>
         <id>local-releases</id>
