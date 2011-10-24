@@ -6,11 +6,11 @@
   <version>1.0.5-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>xebia-petclinic-lite</name>
-  <scm>
+<!--  <scm>
     <connection>scm:git:git://github.com/xebia-guest/xebia-petclinic-lite-7</connection>
     <developerConnection>scm:git:https://xebia-guest@github.com/xebia-guest/xebia-petclinic-lite-7.git</developerConnection>
-  </scm>
-  <distributionManagement>
+  </scm>-->
+<!--  <distributionManagement>
     <repository>
       <id>xebia-tech-event-nexus-releases</id>
       <name>Xebia Tech Event Nexus Releases</name>
@@ -21,7 +21,19 @@
       <name>Xebia Tech Event Nexus Snapshots</name>
       <url>http://nexus.xebia-tech-event.info:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement>-->
+  <distributionManagement>
+      <repository>
+        <id>local-releases</id>
+        <name>Local Releases</name>
+        <url>http://localhost:8081/nexus/content/repositories/releases</url>
+      </repository>
+      <snapshotRepository>
+        <id>local-snapshots</id>
+        <name>Local Snapshots</name>
+        <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+      </snapshotRepository>
+    </distributionManagement>
   <properties>
     <m2eclipse.wtp.contextRoot>/petclinic</m2eclipse.wtp.contextRoot>
     <slf4j.version>1.6.1</slf4j.version>
