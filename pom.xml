@@ -25,7 +25,7 @@
   <scm>
       <connection>scm:git:git://github.com/mathieubigorne/continuous-deployement-mvn-release</connection>
       <developerConnection>scm:git:http://mathieubigorne@github.com/mathieubigorne/continuous-deployement-mvn-release.git</developerConnection>
-    </scm>
+  </scm>
   <distributionManagement>
       <repository>
         <id>local-releases</id>
